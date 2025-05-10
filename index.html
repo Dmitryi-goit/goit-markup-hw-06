@@ -25,7 +25,7 @@
   
       <nav class="nvg">
   
-        <a href="./index.html" class="logo"> Web <span class="std"> Studio </span> </a>
+        <a href="./index.html" class="mob-logo logo"> Web <span class="std"> Studio </span> </a>
   
           <ul class="header-list-nav">
 
@@ -62,7 +62,77 @@
   
       </address>
   
+      <button class="burger-btn" type="button" data-modal-open>
+        <svg class="burger-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+        </svg>
+      </button>
+
   </div>
+  <div class="mob-menu" data-modal>
+<div class="container mob-container">
+  <button type="button" class="close-btn" data-modal-close>
+    <svg class="close-x" width="8" height="8">
+      <use href="./images/icons.svg#icon-close"></use>
+    </svg>
+  </button>
+  <nav class="mob-menu-nav">
+    <ul class="mob-nav-list">
+      <li>
+        <a class="mob-nav-link std" href="./index.html">Studio</a>
+        </li>
+        
+      <li>
+        <a class="mob-nav-link" href="">Portfolio</a>
+      </li>
+
+      <li>
+        <a class="mob-nav-link" href="">Contacts</a> 
+      </li>
+
+    </ul>
+  </nav>
+  <address class="mob-adrs">
+    <ul class="mob-adrs-list"> 
+      <li>
+        <a class="mob-adrs-item" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      </li>
+      <li>
+        <a class="mob-adrs-item" href="tel+110001111111">+11 (000) 111-11-11</a>
+      </li>
+    </ul>
+  </address>
+  <div class="mob-so-links">
+    <ul class="mob-so-icons">
+      <li class="mob-so-items">
+        <a class="mob-icon-links" href=""><svg class="so-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-instagram"></use>
+        </svg></a>
+
+        </li>
+      <li class="mob-so-items">
+        <a class="mob-icon-links" href=""><svg class="so-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-twitter"></use>
+        </svg></a>
+      </li>
+      <li class="mob-so-items">
+        <a class="mob-icon-links" href=""><svg class="so-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-facebook"></use>
+        </svg></a>
+      </li>
+      <li class="mob-so-items">
+        <a class="mob-icon-links" href=""><svg class="so-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-linkedin"></use>
+        </svg></a>
+      </li>
+    </ul>
+  </div>
+  
+</div>
+
+
+  </div>
+
   </header>
 
 
@@ -72,7 +142,7 @@
 <main>
 
   <!--section main-page-->
-    <section class="section main-page">
+    <section class="main-page">
 
     <div class="container main-page-container">
     
@@ -141,7 +211,7 @@
 
       
       <ul class="team">
-        <li class="list"><img  src="./images/mark-min.jpg" srcset="./images/mark-min.jpg  1x, ./images/mark-guerrero-2x.jpg 2x  " width="264" height="260px" alt="mark">
+        <li class="list"><img  src="./images/mark-min.jpg" srcset="./images/mark-min.jpg 1x, ./images/mark-guerrero-2x.jpg 2x  " width="264" height="260px" alt="mark">
           <div class="text-wrapper">
           <h3 class="guys">Mark Guerrero</h3>
           <p class="guys-page">Product Designer</p>
@@ -163,7 +233,7 @@
       </div>
       
         </li>
-        <li  class="list"><img src="./images/tom-min.jpg" srcset="./images/tom-min.jpg  1x, ./images/tom-ford-2x.jpg 2x" width="264" height="260px" alt="tom">
+        <li  class="list"><img src="./images/tom-min.jpg" srcset="./images/tom-min.jpg 1x, ./images/tom-ford-2x.jpg 2x" width="264" height="260px" alt="tom">
           <div class="text-wrapper">
           <h3  class="guys">Tom Ford</h3>
           <p class="guys-page">Frontend Developer</p>
@@ -247,26 +317,26 @@
           <div class="overlay">
             <picture>
               <source
-              media="min-width:1158px"
+              media="(min-width:1158px)"
               srcset="./images/banking-app-1x-desktop.jpg 1x, ./images/banking-app-2x-desktop.jpg"     
               />
               <source
-              media="min-width:768px"
-                srcset="./images/banking-app-1x-desktop.jpg 1x, ./images/banking-app-2x-desktop.jpg.jpg 2x"
+              media="(min-width:768px)"
+                srcset="./images/banking-app-1x-desktop.jpg 1x, ./images/banking-app-2x-desktop.jpg 2x" type="image/jpg"/>
               
-              />
+              
               <source
 
                 
-            media="max-width:767px" 
-            srcset="./images/banking-app-1x-mob.jpg 1x, ./images/banking-app-2x-mob.jpg 2x"
+            media="(max-width:767px)" 
+            srcset="./images/banking-app-1x-mob.jpg 1x, ./images/banking-app-2x-mob.jpg 2x" type="image/jpg"/>
               
             
-            />
+            
             
               
             
-            <img src="./images/banking-app-1x-mob.jpg" width="360" alt="banking app">
+            <img src="./images/banking-app-1x-mob.jpg" width="360" alt="banking app" loading="lazy">
 </picture>
 
             <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App ·
@@ -290,19 +360,19 @@
         <div class="overlay">
           <picture>
             <source
-            media="min-width:1158px"
-            srcset="./images/cashless-payment-1x-desktop.jpg 1x, ./images/cashless-payment-2x-desktop.jpg 2x"
-             />
+            media="(min-width:1158px)"
+            srcset="./images/cashless-payment-1x-desktop.jpg 1x, ./images/cashless-payment-2x-desktop.jpg 2x" type="image/jpg"/>
+             
 <source
-media="min-width:768px"
-srcset="./images/cashless-payment-1x-desktop.jpg 1x, ./images/cashless-payment-2x-desktop.jpg 2x"
-/>
+media="(min-width:768px)"
+srcset="./images/cashless-payment-1x-desktop.jpg 1x, ./images/cashless-payment-2x-desktop.jpg 2x" type="image/jpg"/>
+
 
 <source
-media="max-width:767px"
-srcset="./images/cashless-payment-1x-mob.jpg 1x, ./images/cashless-payment-2x-mob.jpg">
+media="(max-width:767px)"
+srcset="./images/cashless-payment-1x-mob.jpg 1x, ./images/cashless-payment-2x-mob.jpg" type="image/jpg"/>
 
-        <img src="./images/cashless-payment-1x-mob.jpg" width="360" alt="cashless payment">
+        <img src="./images/cashless-payment-1x-mob.jpg" width="360" alt="cashless payment" loading="lazy">
         </picture>
         <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App ·
           Exotic Fruit Ecommerce App ·
@@ -318,20 +388,20 @@ srcset="./images/cashless-payment-1x-mob.jpg 1x, ./images/cashless-payment-2x-mo
         <div class="overlay">
           <picture>
             <source
-             media="min-width:1158px"
-              srcset="./images/mediation-app-1x-desktop.jpg 1x, ./images/mediation-app-2x-desktop.jpg 2x"
-          />
+             media="(min-width:1158px)"
+              srcset="./images/mediation-app-1x-desktop.jpg 1x, ./images/mediation-app-2x-desktop.jpg 2x" type="image/jpg"/>
+          
             <source
-             media="min-width:768px" 
-             srcset="./images/mediation-app-1x-desktop.jpg 1x, ./images/mediation-app-2x-desktop.jpg 2x"
-          />
+             media="(min-width:768px)" 
+             srcset="./images/mediation-app-1x-desktop.jpg 1x, ./images/mediation-app-2x-desktop.jpg 2x" type="image/jpg"/>
+          
           
             <source 
-            media="max-width:767px"
-              srcset="./images/mediation-app-1x-mob.jpg 1x, ./images/mediation-app-2x-mob.jpg 2x">
+            media="(max-width:767px)"
+              srcset="./images/mediation-app-1x-mob.jpg 1x, ./images/mediation-app-2x-mob.jpg 2x" type="image/jpg"/>
           
   
-        <img src="./images/mediation-app-1x-mob.jpg" width="360" alt="meditation app">
+        <img src="./images/mediation-app-1x-mob.jpg" width="360" alt="meditation app" loading="lazy">
         </picture>
 
         <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App ·
@@ -348,23 +418,22 @@ srcset="./images/cashless-payment-1x-mob.jpg 1x, ./images/cashless-payment-2x-mo
         <div class="overlay">
           <picture>
             <source 
-           media="min-width:1158px"
-              srcset="./images/taxi-service-1x-desctop.jpg 1x, ./images/taxi-service-2x-desctop.jpg 2x"
-           />
-
+           media="(min-width:1158px)"
+              srcset="./images/taxi-service-1x-desktop.jpg 1x, ./images/taxi-service-2x-desktop.jpg 2x" type="image/jpg"/>
+           
             <source 
-            media="min-width:768px"
-              srcset="./images/taxi-service-1x-desctop.jpg 1x, ./images/taxi-service-2x-desctop.jpg 2x"
-          />
+            media="(min-width:768px)"
+              srcset="./images/taxi-service-1x-desktop.jpg 1x, ./images/taxi-service-2x-desktop.jpg 2x" type="image/jpg"/>
+          
           
             <source 
-            media="max-width:767px"
-             srcset="./images/taxi-service-1x-mob.jpg 1x, ./images/taxi-service-2x-mob.jpg 2x"
-          />
+            media="(max-width:767px)"
+             srcset="./images/taxi-service-1x-mob.jpg 1x, ./images/taxi-service-2x-mob.jpg 2x" type="image/jpg"/>
           
           
           
-        <img src="./images/taxi-service-1x-mob.jpg" width="360" alt="taxi service">
+          
+        <img src="./images/taxi-service-1x-mob.jpg" width="360" alt="taxi service" loading="lazy">
 </picture>
 
         <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App ·
@@ -382,22 +451,21 @@ srcset="./images/cashless-payment-1x-mob.jpg 1x, ./images/cashless-payment-2x-mo
 
           <picture>
             <source 
-            media="min-width:1158px"
-              srcset="./images/screen-illustrationns-1x-desktop.jpg 1x, ./images/screen-illustrationns-2x-desktop.jpg 2x"
-          />
-            <source 
-              media="min-width:768px"
-              srcset="./images/screen-illustrationns-1x-desktop.jpg 1x, ./images/screen-illustrationns-2x-desktop.jpg 2x"
-                      />
+            media="(min-width:1158px)"
+              srcset="./images/screen-illustrationns-1x-desktop.jpg 1x, ./images/screen-illustrationns-2x-desktop.jpg 2x" type="image/jpg"/>
           
             <source 
-            media="max-width:767px"
-            srcset="./images/screen-illustrationns-1x-mob.jpg 1x, ./screen-illustrationns-2x-mob.jpg 2x"
-          />
+              media="(min-width:768px)"
+              srcset="./images/screen-illustrationns-1x-desktop.jpg 1x, ./images/screen-illustrationns-2x-desktop.jpg 2x" type="image/jpg"/>
+                     
+          
+            <source 
+            media="(max-width:767px)"
+            srcset="./images/screen-illustrationns-1x-mob.jpg 1x, ./screen-illustrationns-2x-mob.jpg 2x"  type="image/jpg"/>
           
             
           
-        <img src="./images/screen-illustrationns-1x-mob.jpg" width="360" alt="screen illustrations">
+        <img src="./images/screen-illustrationns-1x-mob.jpg" width="360" alt="screen illustrations" loading="lazy">
 </picture>
 
         <p class="overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App ·
@@ -414,22 +482,22 @@ srcset="./images/cashless-payment-1x-mob.jpg 1x, ./images/cashless-payment-2x-mo
         <div class="overlay">
           <picture>
             <source 
-              media="min-width:1158px"
-              srcset="./images/Online Courses-1x-desktop.jpg  1x, ./images/Online Courses-2x-desktop.jpg  2x"
-          />
-            <source 
-              media="min-width:768px"
-              srcset="./images/Online Courses-1x-desktop.jpg 1x, ./images/Online Courses-2x-desktop.jpg  2x"
-                      />
+              media="(min-width:1158px)"
+              srcset="./images/Online Courses-1x-desktop.jpg  1x, ./images/Online Courses-2x-desktop.jpg  2x" type="image/jpg"/>
           
             <source 
-             media="max-width:767px"
-             srcset="./images/Online Courses-1x-mob.jpg 1x, ./images/Online Courses-2x-mob.jpg 2x"
-          />
+              media="(min-width:768px)"
+              srcset="./images/Online Courses-1x-desktop.jpg 1x, ./images/Online Courses-2x-desktop.jpg  2x" type="image/jpg"/>
+                      
+          
+            <source 
+             media="(max-width:767px)"
+             srcset="./images/Online Courses-1x-mob.jpg 1x, ./images/Online Courses-2x-mob.jpg 2x" type="image/jpg"/>
+          
           
             
           
-        <img src="./images/Online Courses-1x-mob.jpg" width="360" alt="online courses">
+        <img src="./images/online-courses-1x-desktop.jpg" width="360" alt="online courses" loading="lazy">
 
           </picture>
 
