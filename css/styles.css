@@ -1000,7 +1000,7 @@ column-gap: 0;
 
 .footer-page{
     max-width: 264px;
-    margin-bottom: 72px;
+    
 }
 }
 
@@ -1054,7 +1054,7 @@ display: inline-block;
 @media only screen and (min-width:768px){
     .logo-page{
         text-align: start;
-        margin-bottom: 16px;
+        margin-bottom: 72px;
     }
 }
 
