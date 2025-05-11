@@ -1095,7 +1095,7 @@ display: inline-block;
 .footer-svg{
     display: flex; 
     gap: 16px;
-    
+    justify-content: center;
 }
 
 
